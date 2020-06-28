@@ -1,9 +1,16 @@
 /* Three columns side by side */
 .column {
-    float: left;
-    width: 9%;
-    margin-bottom: 16px;
-    padding: 0 8px;
+  float: left;
+  display: table-cell;
+  margin: 1px;
+  padding: 10px 3px;
+  width: calc( 100% / 10 - 8px);
+  }
+
+  .row{
+    display: table-row;
+    width: 100%;
+    height: 500px;
   }
   
   /* Display the columns below each other instead of side by side on small screens */
@@ -17,6 +24,7 @@
   /* Add some shadows to create a card effect */
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height: 500px;
   }
   
   /* Some left and right padding inside the container */
